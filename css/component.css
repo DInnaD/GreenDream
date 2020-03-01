@@ -91,6 +91,15 @@
 	text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 	
 	letter-spacing: 0.1em;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #a3eaf7;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
 }
 
 .demo-2 .main-title-2::before {
