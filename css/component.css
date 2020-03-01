@@ -9,11 +9,27 @@
 	z-index: 1;
 }
 
+.large-header-2 {
+	position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
 .demo-1 .large-header {
 	background-image: url('../img/demo-1-bg.jpg');
 }
 
 .demo-2 .large-header {
+	box-shadow: 0 0 140px rgba(0, 0, 0, 1);
+	background-image: url('../img/demo-2-bg.jpg');
+	background-position: center bottom;
+}
+
+.demo-2 .large-header-2 {
 	box-shadow: 0 0 140px rgba(0, 0, 0, 1);
 	background-image: url('../img/demo-2-bg.jpg');
 	background-position: center bottom;
