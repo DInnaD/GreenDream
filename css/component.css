@@ -58,15 +58,15 @@
 	font-weight: normal;
 	font-size: 1em;
 	padding-left: 10px;
-	text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 	
 	letter-spacing: 0.1em;
 }
 
 .demo-2 .main-title::before {
 	content: '';
-	width: 20vw;
-	height: 20vw;
+	width: 50vw;/*20*/
+	height: 50vw;/*20*/
 	min-width: 3.5em;
 	min-height: 3.5em;
 	background: url(../img/deco.svg) no-repeat center center;
