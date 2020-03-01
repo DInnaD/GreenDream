@@ -173,4 +173,20 @@
 	.demo-2 .main-title-2 {
 		font-size: 2em;
 	}
+	
+    .demo-2 .main-title::before {
+    content: '';
+    width: 110vw;
+    height: 110vw;
+    min-width: 3.5em;
+    min-height: 3.5em;
+    background: url(../img/deco.svg) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    z-index: -1;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
 }
