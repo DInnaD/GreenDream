@@ -10,7 +10,7 @@
 }
 
 .large-header-2 {
-	height: 58px;
+	height: 100px;
 	position: relative;
 	width: 100%;
 	background: #333;
@@ -32,7 +32,7 @@
 
 .demo-2 .large-header-2 {
 	box-shadow: 0 0 140px rgba(0, 0, 0, 1);
-	background-image: url('../img/demo-2-bg.jpg');
+	/*background-image: url('../img/demo-2-bg.jpg')*/
 	background-position: center bottom;
 }
 
@@ -90,8 +90,8 @@
 	background: url(../img/deco.svg) no-repeat center center;
 	background-size: cover;
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 50%;
+	left: 50%;
 	border-radius: 50%;
 	z-index: -1;
 	-webkit-transform: translate3d(-50%,-50%,0);
