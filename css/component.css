@@ -14,6 +14,7 @@
 }
 
 .demo-2 .large-header {
+	box-shadow: 0 0 140px rgba(0, 0, 0, 1);
 	background-image: url('../img/demo-2-bg.jpg');
 	background-position: center bottom;
 }
