@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>GreenDream</title>
+        <meta name="description" content="Examples for creative website header animations using Canvas and JavaScript" />
+        <meta name="keywords" content="header, canvas, animated, creative, inspiration, javascript" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/price.css" />
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'>
+        <!--[if IE]>
+        	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+	<!--script src="js/modernizr.custom.js"></script><script type="text/javascript">	
+	function changeClass(){
+		if(document.getElementById("block").className == "block")
+			document.getElementById("block").className += " rotated";
+		else
+			document.getElementById("block").className = "block";
+	}
+	</script-->
+	</head>
+	<body>
+		 <!--style>
+			    #menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+		    </style>
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+    <ul class="menu__box">
+      <li><a class="menu__item" href="#">Главная</a></li>
+			<li><a class="menu__item" href="#">for Camper чи Glamper Owner</a></li>
+			<li><a class="menu__item" href="#">Команда</a></li>
+			<li><a class="menu__item" href="#">Блог</a></li>
+			<li><a class="menu__item" href="#">Контакты</a></li>
+    </ul>
+  </div-->		
+	<div class="container demo-2">
+	    <div class="content">
+		   		
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <h1 class="main-title">
+			
+Я могла б тут у мріях</br>
+Готель аж на 15 місць</br>
+Гостям рідним намріяти.</br>
+Та не чіпатиму я </br>
+1000-річну природу</br>
+А запрошу обійняти</br>
+Дубів старих вроду.</br>
+Гостів своїх я бачу</br>
+Ось в цьому гаї де тиша</br> 
+І соловейко співає.</br>
+Вдихнути гірські річки</br>
+Звуки лунають запахом</br>
+Свіжості і просто краси.</br>
+Гармонію відчуває</br>
+Тут тіло душі.</br>
+А трави буяють...</br>
+Зупини неначе життя</br> 
+Одна секунда минає тут,</br> 
+Як вічність буття.</br>
+...</br>
+Кемпінг гламурний</br>
+Зручний тілу й душі</br>
+Заїжджай, ти для нас VIP</br>
+Природа вже грає ноти твої.</br>
+&hearts; &hearts; &hearts; &hearts; &hearts; &hearts; &hearts; </br>
+
+#GretaDanylevska</h1>
+                </div>
+                <!--div class="codrops-top clearfix">
+                    <a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/OffCanvasMenuEffects/"><span>Previous Demo</span></a>
+                    <a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=20153"><span>Back to the Codrops Article</span></a>
+                </div--><!--nav class="codrops-demos">
+                        <a href="index.html">Demo 1</a>
+                        <a class="current-demo" href="index2.html">Demo 2</a>
+                        <a href="index3.html">Demo 3</a>
+                        <a href="index4.html">Demo 4</a>
+                    </nav-->
+                </div>
+            </div>
+            <!-- Related demos -->
+
+            <!--section class="related">
+                <p>If you enjoyed this you might also like:</p>
+                <a href=""><img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2013/07/HeaderEffects-300x162.jpg" />
+                    <h3>Hello for Camper чи Glamper Multinational Owners</h3>
+                </a>
+                <a href="">		    
+                    <img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2014/05/ArticleIntroEffects-300x162.png" />
+                    <h3>Hello for Camper чи Glamper Multinational Bookers</h3>
+                </a>
+		<a href="">
+                    <img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2013/07/HeaderEffects-300x162.jpg" />
+                    <h3>Hello for Team Multinational Builders</h3>
+                </a>
+                <a href="">
+                    <img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2014/05/ArticleIntroEffects-300x162.png" />
+                    <h3>Hello for Soul Oriented Multinational People</h3>
+                </a> 
+		<a href="">
+                    <img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2014/05/ArticleIntroEffects-300x162.png" />
+                    <h3>Hello for Calendar Activity Multinational People</h3>
+                </a>
+		<a href="">
+                    <img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2014/05/ArticleIntroEffects-300x162.png" />
+                    <h3>Hello from Us Multinational Comunity</h3>
+                </a>     
+            </section-->
+	    <section class="price">
+			<div>	
+				<h1>Tours and Price <span><!--/br>please, dragging interaction</br--> <span><a href="https://www.facebook.com/ITvolunteerInnaDanylevska">Our FaceBook For Questions</a></span></span></h1>
+			</div>
+			<ul id="elasticstack" class="elasticstack">
+				<li><img src="img/price/1.jpg" alt="01"/><h5>for Camper чи Glamper Owner<br/> 100$</h5></li>
+				<li><img src="img/price/2.jpg" alt="02"/><h5>for Camper чи Glamper Booker<br/> 200$</h5></li>
+				<li><img src="img/price/3.jpg" alt="03"/><h5>for Cool Team Builders<br/> 300$</h5></li>
+				<li><img src="img/price/4.jpg" alt="04"/><h5>for Soul Oriented Dear People<br/> 100$</h5></li>
+				<li><img src="img/price/5.jpg" alt="05"/><h5>for Calendar Activity People<br/> 200$</h5></li>
+				<li><img src="img/price/6.jpg" alt="06"/><h5>Hello from Our Comunity on the Map</h5></li>
+			</ul>
+	    </section>	    
+            <section class="centered" style="text-align: center; box-shadow: 140px 0 0  rgba(0, 0, 0, 1);">
+		<div class="about" style="font-size: 12px;">
+				<p class="about-author">
+					&copy; 2020 <a href="https://www.facebook.com/ITvolunteerInnaDanylevska" target="_blank">Partners Here</a> -
+					<a href="http://www.cssflow.com/mit-license" target="_blank">MIT License, CC0 Public Domain(CC-BY, CC-BY-SA)</a><br>
+					With &hearts; by <a href="https://www.facebook.com/ITvolunteerInnaDanylevska" target="_blank">GretaDanylevska</a>
+				</p>
+			</div>
+	    </section>
+	</div><!-- /container -->
+	<div class="container demo-2">
+	    <div class="content">
+                <div id="large-header-2" class="large-header-2">
+                    <canvas id="demo-canvas-2"></canvas>
+                    <h1 class="main-title-2"><span>CampingЧиGlamping</span></h1>
+                </div>
+	    </div>
+	</div>
+        <script src="js/rAF.js"></script>
+        <script src="js/demo-2.js"></script>
+        <!-- price d&d -->
+		<script src="js/draggabilly.pkgd.min.js"></script>
+		<script src="js/elastiStack.js"></script>
+		<script>
+			new ElastiStack( document.getElementById( 'elasticstack' ) );
+		</script>
+	</body>
+</html>
