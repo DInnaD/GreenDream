@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/component.css" />
         <link rel="stylesheet" type="text/css" href="css/price.css" />
-        <link rel="stylesheet" type="text/css" href="css/menu.scss" />
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
         <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'>
         <!--[if IE]>
         	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -30,36 +30,116 @@
 	<body>
 	<div class="container demo-2">
 	    <div class="content">
-    <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
-    <input id="toggle" type="checkbox">
+		    <style>
+			    #menu__toggle {
+  opacity: 0;
+}
 
-    <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
 
-    <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
-    <label class="toggle-container" for="toggle">
-        <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
-        <span class="button button-toggle"></span>
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #616161;
+
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+
+  width: 300px;
+  height: 100%;
+
+  margin: 0;
+  padding: 80px 0;
+
+  list-style: none;
+
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+  transition-duration: .25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+
+  color: #333;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+		    </style>
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
     </label>
 
-    <!-- The nav menu -->
-    <nav class="nav">
-        <a class="nav-item" href="">Dashboard</a>
-        <a class="nav-item" href="">History</a>
-        <a class="nav-item" href="">Statistics</a>
-        <a class="nav-item" href="">Settings</a>
-    </nav>
-
-    <!-- Just dummy content like in the animated gif -->
-    <section class="dummy-content">
-        <div class="circle"></div>
-        <div class="text">
-            <span></span><span></span>
-        </div>
-        <div class="square-top"></div>
-        <div class="square-behind"></div>
-    </section>
-
-				
+    <ul class="menu__box">
+      <li><a class="menu__item" href="#">Главная</a></li>
+			<li><a class="menu__item" href="#">for Camper чи Glamper Owner</a></li>
+			<li><a class="menu__item" href="#">Команда</a></li>
+			<li><a class="menu__item" href="#">Блог</a></li>
+			<li><a class="menu__item" href="#">Контакты</a></li>
+    </ul>
+  </div>				
                 <div id="large-header" class="large-header">
                     <canvas id="demo-canvas"></canvas>
                     <h1 class="main-title">
