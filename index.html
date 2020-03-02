@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/component.css" />
         <link rel="stylesheet" type="text/css" href="css/price.css" />
-        <!--link rel="stylesheet" type="text/css" href="css/rotate.css" /-->
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
         <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'>
         <!--[if IE]>
         	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -30,6 +30,35 @@
 	<body>
 	<div class="container demo-2">
 	    <div class="content">
+    <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+    <input id="toggle" type="checkbox">
+
+    <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+
+    <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+    <label class="toggle-container" for="toggle">
+        <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+        <span class="button button-toggle"></span>
+    </label>
+
+    <!-- The nav menu -->
+    <nav class="nav">
+        <a class="nav-item" href="">Dashboard</a>
+        <a class="nav-item" href="">History</a>
+        <a class="nav-item" href="">Statistics</a>
+        <a class="nav-item" href="">Settings</a>
+    </nav>
+
+    <!-- Just dummy content like in the animated gif -->
+    <section class="dummy-content">
+        <div class="circle"></div>
+        <div class="text">
+            <span></span><span></span>
+        </div>
+        <div class="square-top"></div>
+        <div class="square-behind"></div>
+    </section>
+
 				
                 <div id="large-header" class="large-header">
                     <canvas id="demo-canvas"></canvas>
