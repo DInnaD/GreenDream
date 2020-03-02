@@ -12,10 +12,12 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/price.css" />
         <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'>
         <!--[if IE]>
         	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+	<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body>
 	<div class="container demo-2">
@@ -68,22 +70,59 @@
             <section class="related">
                 <p>If you enjoyed this you might also like:</p>
                 <a href="">
-                    <img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2013/07/HeaderEffects-300x162.jpg" />
-                    <h3>Hello for Glampers</h3>
+		    <div id="block" class="block" onclick="changeClass()">
+			<div class="front side">
+			<img src="img/price/1.jpg" alt="Value for Camper чи Glamper Multinational Owners"/>
+			</div>
+			<div class="back side">
+ 			<p>Map - Place - Food - Service - Calendar Activities - Relax - Enjoy - Happyness</p>
+			</div>
+		    </div>
+                    <!--img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2013/07/HeaderEffects-300x162.jpg" /-->
+                    <h3>Hello for Camper чи Glamper Multinational Owners</h3>
                 </a>
                 <a href="">
-                    <img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2014/05/ArticleIntroEffects-300x162.png" />
-                    <h3>Hello for Booking Glampers</h3>
+		    <div id="block" class="block" onclick="changeClass()">
+			<div class="front side">
+			<img src="img/price/2.jpg" alt="Value for Camper чи Glamper Multinational Bookers"/>
+			</div>
+			<div class="back side">
+ 			<p>Train Stantion - Transfer - Place - Food - Service - Calendar Activities - Relax - Enjoy - Happyness</p>
+			</div>
+		    </div>
+                    <!--img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2014/05/ArticleIntroEffects-300x162.png" /-->
+                    <h3>Hello for Camper чи Glamper Multinational Bookers</h3>
                 </a>
 		<a href="">
                     <img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2013/07/HeaderEffects-300x162.jpg" />
-                    <h3>Hello for Working Comunity</h3>
+                    <h3>Hello for Team Multinational Builders</h3>
                 </a>
                 <a href="">
                     <img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2014/05/ArticleIntroEffects-300x162.png" />
-                    <h3>Hello for Nature People</h3>
-                </a>    
+                    <h3>Hello for Soul Oriented Multinational People</h3>
+                </a> 
+		<a href="">
+                    <img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2014/05/ArticleIntroEffects-300x162.png" />
+                    <h3>Hello for Calendar Activity Multinational People</h3>
+                </a>
+		<a href="">
+                    <img src="http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2014/05/ArticleIntroEffects-300x162.png" />
+                    <h3>Hello from Us Multinational Comunity</h3>
+                </a>     
             </section>
+	    <section class="price">
+			<div>	
+				<h1>Tours and Price <span>Please, dragging interaction <span>Idea from this <a href="https://www.facebook.com/ITvolunteerInnaDanylevska">Our FaceBook Starting History</a></span></span></h1>
+			</div>
+			<ul id="elasticstack" class="elasticstack">
+				<li><img src="img/1.jpg" alt="01"/><h5>Camper чи Glamper Owners</h5></li>
+				<li><img src="img/2.jpg" alt="02"/><h5>Camper чи Glamper Bookers</h5></li>
+				<li><img src="img/3.jpg" alt="03"/><h5>Team Multinational Builders</h5></li>
+				<li><img src="img/4.jpg" alt="04"/><h5>Soul Oriented People</h5></li>
+				<li><img src="img/5.jpg" alt="05"/><h5>Calendar Activity People</h5></li>
+				<li><img src="img/6.jpg" alt="06"/><h5>Our Comunity on the Map</h5></li>
+			</ul>
+	    </section>	    
             <section class="centered" style="text-align: center; box-shadow: 140px 0 0  rgba(0, 0, 0, 1);">
 		<div class="about" style="font-size: 12px;">
 				<p class="about-author">
@@ -104,5 +143,11 @@
 	</div>
         <script src="js/rAF.js"></script>
         <script src="js/demo-2.js"></script>
+        <!-- price d&d -->
+		<script src="js/draggabilly.pkgd.min.js"></script>
+		<script src="js/elastiStack.js"></script>
+		<script>
+			new ElastiStack( document.getElementById( 'elasticstack' ) );
+		</script>
 	</body>
 </html>
