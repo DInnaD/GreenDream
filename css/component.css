@@ -193,14 +193,15 @@
     height: 70vw;
     }
 	
-    .poem {    
-    font-family: 'Clicker Script', cursive;
-    font-size: 1em;
-    }
-	
-    h1 {
+    .poem { 
+    text-align: center;	    
     font-family: 'Clicker Script', cursive;
     font-size: 1em;
     margin: 0.67em 0;
-}	
+    }
+	
+    h1 {
+    font-size: 1em;
+    margin: 0.67em 0;
+    }	
 }
