@@ -78,7 +78,7 @@
 .demo-2 .main-title {
 	font-family: 'Clicker Script', cursive;
 	font-weight: normal;
-	font-size: 1.5em;/*8em*/
+	font-size: 1.45em;/*8em*/
 	padding-left: 10px;
 	text-shadow: 2px 2px 4px #f9f1e9;
 }
@@ -167,7 +167,7 @@
 	}
 
 	.demo-2 .main-title {
-		font-size: 1.5em;
+		font-size: 1.35em;
 	}
 
 	.demo-2 .main-title-2 {
