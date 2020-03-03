@@ -159,6 +159,15 @@
 	font-weight: 300;
 }
 
+.poem {
+    text-align: center;    
+    font-family: 'Clicker Script', cursive, sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    padding-left: 10px;
+    text-shadow: 2px 2px 4px #f9f1e9;
+}
+
 @media only screen and (max-width : 768px) {
 	.demo-1 .main-title, 
 	.demo-3 .main-title,
@@ -182,5 +191,9 @@
     .demo-2 .main-title-2::before {
     width: 50vw;
     height: 70vw;
+    }
+	
+    .poem {
+    font-size: 1em;
     }
 }
